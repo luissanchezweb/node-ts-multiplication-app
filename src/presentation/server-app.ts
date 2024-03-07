@@ -18,10 +18,10 @@ export class ServerApp {
         const wasCreated = new SaveFile().execute({
             fileContent: table,
             fileName: name,
-            fileDestination: `${ destination }/table-${ base }`})
+            fileDestination:  destination })
 
         if( showTable ) console.log(table);
         
-        (wasCreated) ? console.log('File created') : console.log('File not created');
+        (wasCreated) ? console.log('File created!') : console.log('File not created!');
     }
 }
